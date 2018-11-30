@@ -1,33 +1,16 @@
 // Operadores de Comparação
-// 	* 
-// ==  Igualdade(valor)
-// 	* 
-// !=  Diferente(valor)
-// 	* 
-// === Igualdade(valor e tipo)
-// 	* 
-// !== Diferente(valor e tipo)
-// 	* 
-//   > Maior
-// 	* 
-//  >= Maior ou igual
-// 	* 
-//   < Menor
-// 	* 
-//  <= Menor ou igual
 
-
-var number1 = prompt("digite primmeiro número");
+var number1 = prompt("digite primmeiro nota");
 number1 = parseFloat(number1)
 
-var number2 = parseFloat(prompt("digite sengundo número"));
+var number2 = parseFloat(prompt("digite sengundo nota"));
 
-var result = (number1 + number2) / 2;
+var media = (number1 + number2) / 2;
 
 
-if (result >= 5) {
-    alert("Sua media é " + result + " Parabens voce passou :)")
+if (number1 > 0 && number2 > 0 && media >= 5) {
+    alert("Sua media é " + media + " Parabens voce passou :)")
 } else{
-    alert("Sua media é " + result + " Voce foi reprovado :(")
+    alert("Sua media é " + media + " Voce foi reprovado :(")
 }
 
