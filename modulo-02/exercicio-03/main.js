@@ -7,7 +7,8 @@ var number2 = parseInt(prompt("jogador 2 digite um número: "));
 //se forem iguais, mostrar mensagem 'empate'
 if (number1 === number2) {
     alert("Deu empate")
-} else var sorteio = parseInt(Math.random() * 2);
+} 
+var sorteio = parseInt(Math.random() * 2);
 
 // se o numero sorteado for 0, ganha quem escolher o numero MENOR
 if (sorteio == 0) {
