@@ -7,13 +7,8 @@ var number2 = parseInt(prompt("jogador 2 digite um número: "));
 //se forem iguais, mostrar mensagem 'empate'
 if (number1 === number2) {
     alert("Deu empate")
-} else if (number1 > number2) {
-    alert("o número " + number1 + " è maior ");
-} else {
-    alert("o número " + number2 + " è maior ");
-}
-//sortear um numero entre 0 e 1
-var sorteio = parseInt(Math.random() * 2);
+} else var sorteio = parseInt(Math.random() * 2);
+
 // se o numero sorteado for 0, ganha quem escolher o numero MENOR
 if (sorteio == 0) {
     if (number1 < number2) {
@@ -21,11 +16,13 @@ if (sorteio == 0) {
     } else {
         alert("jogador 2  " + number2 + " ganhou  ");
     }
+//se o numero sorteado for 1, ganha quem escolher o numero MAIOR
 } else if (sorteio == 1) {
     if (number1 > number2) {
         alert("jogador 1  " + number1 + " ganhou  ");
     } else {
-        alert("jogador 3  " + number2 + " ganhou  ");
+        alert("jogador 2  " + number2 + " ganhou  ");
     }
 }
-//se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+//sortear um numero entre 0 e 1
+
