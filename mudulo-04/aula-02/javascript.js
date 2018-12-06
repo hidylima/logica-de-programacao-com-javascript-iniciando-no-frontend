@@ -1,9 +1,6 @@
-var nummero = prompt('');
-nummero = parseFloat(nummero);
-var indice = 1;
+var largura = parseFloat(prompt('digite a largura'));
+var altura = parseFloat(prompt('digite a altura'));
 
-while (indice <= 10) {
-    document.write(nummero +' x ' + indice + '  = nummero ' + (nummero * indice)+'<br>');
-    indice++;
+function mostraArea(largura, altura) {
+ alert( (largura * altura));
 }
-document.write('Saiu do loop')
