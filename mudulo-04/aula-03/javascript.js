@@ -1,9 +1,17 @@
-var nummero = prompt('');
-nummero = parseFloat(nummero);
-var indice = 1;
+var largura = parseFloat(prompt('digite a largura'));
+var altura = parseFloat(prompt('digite a altura'));
 
-while (indice <= 10) {
-    document.write(nummero +' x ' + indice + '  = nummero ' + (nummero * indice)+'<br>');
-    indice++;
+function mostrarAreaAlert() {
+    var area = clacularArea(largura, altura)
+    alert('a área total é: ' + area);
 }
-document.write('Saiu do loop')
+
+function mostrarAreaOutput() {
+    var area = clacularArea(largura, altura)
+
+    document.querySelector('#output').innerHTML = 'a área total é: ' + area;
+}
+
+function clacularArea(largura, altura) {
+    return largura * altura;
+}
