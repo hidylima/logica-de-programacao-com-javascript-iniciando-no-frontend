@@ -8,14 +8,14 @@ function inicializandoCalculo(calc) {
     var number1 = parseInt(document.querySelector('#output').textContent);
 
     var number2 = parseInt(prompt('Digite outro numero: '));
-    
+
     try {
         var msg = calcular(calc, number1, number2);
     } catch (error) {
         console.log(error);
         return;
     }
-    
+
     escrever(msg);
 }
 
@@ -27,8 +27,8 @@ function escrever(mensagem) {
 
 function calcular(calc, number1, number2) {
 
-    if (sibolo !== '+' && simbolo !== "-" && simbolo !== '*' || simbolo !== '/') {
-         throw new Error('Chama passada somente numerico');
+    if (calc !== '+' && calc !== "-" && calc !== '*' && calc !== '/') {
+        throw new Error('Chama passada somente numerico');
     }
     if (isNaN(number1) || isNaN(number2)) {
         throw new Error('Chama passada somente numerico');
