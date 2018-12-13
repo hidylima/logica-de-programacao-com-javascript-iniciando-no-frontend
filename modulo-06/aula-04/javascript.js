@@ -1,15 +1,27 @@
-var pessoa = new Object();
+// var nomes = [ "maria", "joão"];
+// var produto ={
+//     nome: "caneta",
+//     preco: "preco"
+// }
+// var produto1 = [ produto, { nome: "caneta", preco: "preco" } ]/
 
-pessoa.nome = "Luiz Carlos ";
-pessoa.sobrenome = "Balisa Lima";
-pessoa.idade = 28;
-pessoa.peso = 68.55;
 
+
+var produtos = [{
+        "nome": "caneta",
+        "preco": 12
+    },
+    {
+        "nome": "lapis",
+        "preco": 15
+    }
+];
 var msg = "";
 
-msg += "Seja bem vindo! " + pessoa.nome + " " + pessoa.sobrenome + "<br>";
-msg += "Você tem " + pessoa.idade + " anos <br>" ;
-msg += "Seu peso é " + pessoa.peso + "<br>";
-
-document.querySelector("#app").innerHTML = msg;
-
+for (var index = 0; index < produtos.length; index++) {
+    msg += "<h2> Produsto: " + produtos[index].nome + "</h2>"
+    msg += "<p> Preço: " + produtos[index].preco + "</p>";
+    
+}
+console.log(msg)
+document.querySelector( "#app").innerHTML = msg;
