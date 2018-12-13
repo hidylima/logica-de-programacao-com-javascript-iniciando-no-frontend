@@ -7,7 +7,8 @@
 
 
 
-var produtos = [{
+var produtos = [
+    {
         "nome": "caneta",
         "preco": 12
     },
